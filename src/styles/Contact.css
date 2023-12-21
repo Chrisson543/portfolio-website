@@ -1,0 +1,99 @@
+.contact-page{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.contact-page a{
+    color: var(--body-font-color);
+}
+.contact-page a:visited{
+    color: var(--body-font-color);
+}
+.contact-page .main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+    color: var(--body-font-color);
+    position: relative;
+    margin-top: 5rem;
+}
+.contact-page .main .left-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    height: 80%;
+    margin-right: 0.5rem;
+}
+.contact-page .main .left-section img{
+    width: 50%;
+    max-width: 400px;
+    background-color: var(--pfp-background-color);
+    border-radius: 100%;
+    margin-bottom: 1rem;
+}
+.contact-page .main  h1, .contact-page .main h2{
+    color: var(--clr-light-green);
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.contact-page .main .right-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+    font-size: 1.2rem;
+}
+.contact-page .main .right-section p,
+.contact-page .main .right-section ul,
+.contact-page .main .right-section h1{
+    margin-top: 1.5rem;
+    list-style-position: inside;
+    list-style-type: none;
+}
+.contact-page .main .right-section ul li{
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+}
+.contact-page .main .right-section ul img{
+    margin-right: 0.5rem;;
+}
+.contact-page .navbar .right-section ul li:nth-child(3){
+    background-color: var(--clr-light-green);
+}
+.contact-page .navbar .right-section ul li:nth-child(3) a{
+    color: black;
+}
+@media (max-width: 1000px) {
+    .contact-page .main{
+        display: flex;
+        flex-direction: column;
+        padding: 6rem 2rem;
+        overflow-y: scroll;
+    }
+    .contact-page .main .right-section{
+        margin-top: 0rem;
+    }
+    .contact-page .main h2{
+        margin-top: 1.5rem;
+    }
+    .contact-page .main .left-section{
+        height: auto;
+    }
+}
+@media (max-width: 405px) {
+    .contact-page .main  h1, .contact-page .main  h2{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 343px) {
+    .contact-page .main .right-section li{
+        font-size: 1.1rem;
+    }
+    .contact-page .main{
+        padding: 6rem 1rem;
+    }
+}

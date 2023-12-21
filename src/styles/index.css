@@ -1,0 +1,45 @@
+:root{
+    --clr-light-green: #00E45B;
+    --background-color: #181A20;
+    --pfp-background-color: #23272F;
+    --body-font-color: white;
+    --navbar-background-color-dark: #23272F;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+html, body, #root{
+    height: 100%;
+}
+html{
+    font-size: 18px;
+}
+body{
+    background-color: var(--background-color);
+}
+a{
+    text-decoration: none;
+}
+
+.raise{
+    transition: transform 0.3s;
+}
+.raise:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+
+@media (max-width: 1290px){
+    html{
+        font-size: 15px;
+    }
+}
+@media (max-width: 1000px){
+    html{
+        font-size: 12px;
+    }
+}

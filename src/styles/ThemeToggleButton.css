@@ -1,0 +1,13 @@
+.theme-toggle-button{
+    max-width: 40px;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    background-color: transparent;
+    border: none;
+}
+.theme-toggle-button .theme-toggle-img{
+    width: 3vw;
+    max-width: 40px;
+    min-width: 25px;
+}

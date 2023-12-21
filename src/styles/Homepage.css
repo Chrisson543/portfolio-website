@@ -1,0 +1,107 @@
+@keyframes blinking{
+    from{
+        border-right: 1px solid var(--body-font-color);
+    }
+    to{
+        border: none;
+    }
+}
+
+.homepage{
+    background-color: var(--background-color);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 15vh 10vw;
+    color: var(--body-font-color);
+}
+.homepage a, .homepage a:visited{
+    color: var(--body-font-color);
+}
+.homepage .header{
+    width: fit-content;
+    animation: blinking 1s infinite;
+    height: 5.5rem;
+}
+.homepage .title{
+    font-size: 5rem;
+    color: var(--clr-light-green);
+    line-height: 5.5rem;
+}
+.homepage .sections{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.homepage .left-section{
+    display: flex;
+    flex-direction: column;
+}
+.homepage .container{
+    margin-left: 4rem;
+    margin-top: 0.75rem
+}
+.homepage .subtitle{
+    font-size: 1.5rem;
+}
+.homepage .left-section nav{
+    margin-top: 3em;
+}
+.homepage .left-section ul{
+    list-style: none;
+    color: var(--body-font-color);
+}
+.homepage .left-section ul li{
+    margin-bottom: 1.2em;
+    font-size: 1.5rem;
+}
+
+.homepage .right-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homepage .right-section img{
+    width: 80%;
+    max-width: 500px;
+    background-color: var(--pfp-background-color);
+    border-radius: 100%;
+}
+.homepage .menu-options li{
+    width: fit-content;
+}
+.homepage .menu-options li:hover{
+    padding-right: 3px;
+    animation: blinking 1s infinite;
+}
+@media (max-width: 1000px){
+    .homepage{
+        padding: 12vh 8vw;
+    }
+    .homepage .container{
+        margin-left: 4rem;
+    }
+    .homepage .left-section nav{
+        margin-top: 5em;
+    }
+}
+@media (max-width: 750px){
+    .homepage .title{
+        font-size: 3.5rem;
+    }
+    .homepage .container{
+        margin-left: 1rem;
+    }
+}
+@media (max-width: 364px){
+    .homepage .title{
+        font-size: 2.7rem;
+    }
+    .homepage .left-section ul li{
+        font-size: 1.1rem;
+    }
+    .homepage .subtitle{
+        font-size: 1.1rem;
+    }
+}
