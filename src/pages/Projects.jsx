@@ -6,9 +6,6 @@ import openingTagLight from '../assets/opening-tag-light.png';
 import openingTagDark from '../assets/opening-tag-dark.png';
 import closingTagLight from '../assets/closing-tag-light.png';
 import closingTagDark from '../assets/closing-tag-dark.png';
-import wordleScreenshot from '../assets/wordle-clone-screenshot.png';
-import weatherAppScreenshot from '../assets/weather-app-screenshot.png';
-import todoAppScreenshot from '../assets/todo-app-screenshot.png';
 import ThemeToggleButton from '../components/ThemeToggleButton';
 import { darkModeContext } from '../index';
 
@@ -17,21 +14,21 @@ export default function Projects(){
     const projectsList = [
         {
             title: 'wordle clone',
-            image: wordleScreenshot,
+            image: '/wordle-clone-screenshot.png',
             description: "a wordle clone with the added functionality of 'giving up' if you are unable to guess the word.",
             tags: ['react js'],
             link: 'https://wordle-clone-by-chrisson.netlify.app/'
         },
         {
             title: 'weather app',
-            image: weatherAppScreenshot,
+            image: '/weather-app-screenshot.png',
             description: "a weather app that gets the current location of the user and displays the 3-day weather forecast of their location using a weather api.\n\n you can also search the forecast of other locations.",
             tags: ['react js', 'api'],
             link: 'https://weather-app-by-chrisson.netlify.app/'
         },
         {
             title: 'todo list app',
-            image: todoAppScreenshot,
+            image: '/todo-app-screenshot.png',
             description: "a todo list app that has the option to add tasks, remove tasks, view task description, update task and mark tasks as completed.",
             tags: ['react js'],
             link: 'https://todo-app-by-chrisson.netlify.app/'
