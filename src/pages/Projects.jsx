@@ -13,6 +13,13 @@ export default function Projects(){
     const [currentProjectInView, setCurrentProjectInView] = React.useState(0);
     const projectsList = [
         {
+            title: 'chat app',
+            image: '/chat-app-screenshot.png',
+            description: "a chat application that lets users create accounts and join PIN-protected rooms that anyone can create. the creator of the room becomes the room admin and can kick online participants from the room.",
+            tags: ['react js', 'react router', 'firebase'],
+            link: 'https://chrisson-chat-app.netlify.app/'
+        },
+        {
             title: 'wordle clone',
             image: '/wordle-clone-screenshot.png',
             description: "a wordle clone with the added functionality of 'giving up' if you are unable to guess the word.",

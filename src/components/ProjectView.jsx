@@ -17,7 +17,7 @@ export default function ProjectView({projectImage, projectTitle, projectDescript
                 <div className='project-description'>
                     <h1 className='project-title'>{`<${projectTitle} />`}</h1>
                     <p className='project-description-text'>{projectDescription}</p>
-                    <div className='project-tags'>
+                    <div className='project-tags custom-scrollbar'>
                         {tagsElements}
                     </div>
                     <a href={projectLink} target='_blank'><button className='visit-project-button raise'>VISIT</button></a>
